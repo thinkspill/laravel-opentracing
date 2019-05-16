@@ -14,12 +14,11 @@
     }
   ],
   "require": {
-    "php": ">=5.6",
+    "php": ">=7.0",
     "guzzlehttp/guzzle": "^6.2",
-    "illuminate/support": "^5.4.36",
-    "jonahgeorge/jaeger-client-php": "dev-feature/php56",
-    "opentracing/opentracing": "^1.0.0-beta5",
-    "paragonie/random_compat": "^2",
+    "illuminate/support": "5.*",
+    "jonahgeorge/jaeger-client-php": "^0.4",
+    "opentracing/opentracing": "^1.0.0-beta6",
     "psr/cache": "~1.0.1"
   },
   "require-dev": {
@@ -27,12 +26,6 @@
     "php-coveralls/php-coveralls": "^2.1",
     "phpunit/phpunit": "~5.7.27"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/taisph/jaeger-client-php"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "LaravelOpenTracing\\": "src/"
